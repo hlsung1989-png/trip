@@ -1,0 +1,1 @@
+.card-art:before,.card-art:after{z-index:1}.card-art.has-photo:after{display:none}.card-photo,.detail-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}.detail-hero:before{z-index:1}.detail-hero>*:not(.detail-photo){z-index:2}

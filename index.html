@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="中国十个热门目的地的自由行攻略与路线建议。" />
+    <title>山川手册｜中国旅行攻略</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="image-overrides.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="山川手册首页"><span class="brand-mark"></span>山川手册</a>
+      <nav aria-label="主导航"><a href="#guides">目的地</a><a href="#season">当季灵感</a><a href="#about">关于手册</a></nav>
+      <button class="header-action" type="button" data-scroll="guides">开始规划 <span aria-hidden="true">↘</span></button>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">CHINA / FIELD NOTES 2026</p>
+          <h1 id="hero-title">把远方，<br />走成自己的故事。</h1>
+          <p class="hero-summary">十处值得专程抵达的中国风景。路线、节奏与那些不该错过的清晨，都收进这一册旅行手记。</p>
+          <div class="hero-actions"><button class="primary-button" type="button" data-scroll="guides">探索目的地 <span aria-hidden="true">→</span></button><span>10 篇实用攻略</span></div>
+        </div>
+        <div class="hero-art" aria-label="层叠山峦的抽象风景插画" role="img"><div class="sun"></div><div class="ridge ridge-one"></div><div class="ridge ridge-two"></div><div class="ridge ridge-three"></div><p>从山海之间<br />重新认识中国</p></div>
+      </section>
+
+      <section class="season-note" id="season" aria-label="当季旅行提示"><div><p class="eyebrow">SEASONAL NOTE</p><h2>九月，往西走。</h2></div><p>高原雨季渐歇，黄山初染秋色，九寨沟的海子正进入一年中最澄澈的时刻。出发前，请优先确认景区预约与天气。</p><button type="button" data-filter="高原徒步">查看高原路线 <span aria-hidden="true">→</span></button></section>
+
+      <section class="guides-section" id="guides" aria-labelledby="guides-title">
+        <div class="section-heading"><div><p class="eyebrow">THE COLLECTION</p><h2 id="guides-title">选一处，认真抵达。</h2></div><p>所有攻略均以自由行为尺度编写，给足必要信息，也留下一点迷路的余地。</p></div>
+        <div class="explore-bar">
+          <div class="filters" aria-label="目的地分类筛选"><button class="filter active" data-filter="全部">全部</button><button class="filter" data-filter="自然风光">自然风光</button><button class="filter" data-filter="人文历史">人文历史</button><button class="filter" data-filter="城市漫游">城市漫游</button><button class="filter" data-filter="高原徒步">高原徒步</button></div>
+          <label class="search"><span class="sr-only">搜索目的地</span><input id="search" type="search" placeholder="搜索山川、城市或关键词" /><span aria-hidden="true">⌕</span></label>
+        </div>
+        <div id="guide-grid" class="guide-grid" aria-live="polite"></div>
+        <div id="empty-state" class="empty-state" hidden><p class="eyebrow">NO MATCHES</p><h3>这一次，换个方向找找。</h3><button class="text-button" type="button" id="clear-filters">清除筛选条件 →</button></div>
+      </section>
+
+      <section class="closing" id="about"><p class="eyebrow">A SMALL PROMISE</p><h2>好攻略不是替你决定目的地，<br />而是让你有底气出发。</h2><p>山川手册持续整理路线与在地细节，为每一次短暂离开留出更从容的开始。</p></section>
+    </main>
+
+    <footer><a class="brand" href="#top"><span class="brand-mark"></span>山川手册</a><p>中国旅行攻略 · 为自由行而写</p><p>© 2026 FIELD NOTES</p></footer>
+    <dialog id="guide-dialog" aria-labelledby="dialog-title"><button class="close-dialog" type="button" aria-label="关闭攻略">×</button><div id="dialog-content"></div></dialog>
+    <template id="skeleton-template"><article class="skeleton-card"><div></div><p></p><p></p></article></template>
+    <script src="app.js"></script>
+  </body>
+</html>
